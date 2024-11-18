@@ -2,6 +2,30 @@
   text-align: center;
 }
 
+.card-back {
+  width: 80px; /* Ancho de la carta */
+  height: 120px; /* Altura de la carta */
+  border-radius: 10px; /* Bordes redondeados */
+  background-color: #006400; /* Fondo verde estilo tapete */
+  border: 2px solid #fff; /* Borde blanco */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Verdana', sans-serif; /* Fuente elegante */
+  font-size: 20px; /* Tamaño del texto */
+  color: white; /* Color del texto */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para realismo */
+  cursor: pointer; /* Cambiar cursor al pasar sobre la carta */
+}
+
+.cards-container {
+  display: grid; /* Usamos grid para organizar los elementos */
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas de ancho igual */
+  gap: 10px; /* Espaciado entre los botones */
+  padding: 20px; /* Espaciado interno para el contenedor */
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
