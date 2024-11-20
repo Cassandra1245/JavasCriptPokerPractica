@@ -6,24 +6,44 @@
   width: 80px; /* Ancho de la carta */
   height: 120px; /* Altura de la carta */
   border-radius: 10px; /* Bordes redondeados */
-  background-color: #006400; /* Fondo verde estilo tapete */
+  background: linear-gradient(135deg, #004d00 25%, #007300 25%, #007300 50%, #004d00 50%, #004d00 75%, #007300 75%); /* Fondo con patrón a rayas */
+  background-size: 20px 20px; /* Tamaño del patrón */
   border: 2px solid #fff; /* Borde blanco */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para realismo */
+  position: relative; /* Posición relativa para agregar elementos decorativos */
+  overflow: hidden; /* Oculta elementos que sobresalgan */
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Verdana', sans-serif; /* Fuente elegante */
-  font-size: 20px; /* Tamaño del texto */
-  color: white; /* Color del texto */
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para realismo */
   cursor: pointer; /* Cambiar cursor al pasar sobre la carta */
 }
 
+/* Detalle central decorativo (simula el diseño de un logo o patrón) */
+
+
+/* Detalle decorativo de borde */
+.card-front {
+  width: 80px; /* Ancho de la carta */
+  height: 120px; /* Altura de la carta */
+  border-radius: 10px; /* Bordes redondeados */
+  background: linear-gradient(135deg, #FFD700, #FFA500); /* Fondo dorado degradado */
+  border: 2px solid #000; /* Borde negro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Times New Roman', serif; /* Fuente clásica */
+  font-size: 24px; /* Tamaño del texto */
+  font-weight: bold;
+  color: black; /* Color del texto */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para realismo */
+  text-align: center;
+}
+
 .cards-container {
-  display: grid; /* Usamos grid para organizar los elementos */
-  grid-template-columns: repeat(4, 1fr); /* 4 columnas de ancho igual */
-  gap: 10px; /* Espaciado entre los botones */
-  padding: 20px; /* Espaciado interno para el contenedor */
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 10px; 
+  padding: 20px; 
 }
 
 .App-logo {
